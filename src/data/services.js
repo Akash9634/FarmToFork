@@ -1,0 +1,78 @@
+/**
+ * services.js – Service cards for homepage.
+ * Replace with client data when ready.
+ */
+export const homeServices = [
+  {
+    id: 'hs1',
+    title: 'Reservations',
+    subtitle: 'Your Table Awaits',
+    description: 'Reserve your table for lunch, dinner or a special occasion.',
+    icon: 'UtensilsCrossed',
+    link: '/reservations',
+    cta: 'Reserve a Table',
+  },
+  {
+    id: 'hs2',
+    title: 'Workshops',
+    subtitle: 'Create. Connect. Celebrate.',
+    description: 'Pottery, painting, coffee experiences and more creative workshops.',
+    icon: 'Palette',
+    link: '/workshops',
+    cta: 'Book a Workshop',
+  },
+  {
+    id: 'hs3',
+    title: 'Kitty Parties',
+    subtitle: 'Your Kitty, Our Table',
+    description: 'Special menus, décor and packages for the perfect kitty party.',
+    icon: 'PartyPopper',
+    link: '/kitty-parties',
+    cta: 'Book a Kitty Party',
+  },
+  {
+    id: 'hs4',
+    title: 'Events',
+    subtitle: 'Your Event. Your Way.',
+    description: 'Birthdays, anniversaries, corporate events and private parties.',
+    icon: 'CalendarHeart',
+    link: '/events',
+    cta: 'Plan an Event',
+  },
+  {
+    id: 'hs5',
+    title: 'DIY Kits',
+    subtitle: 'Take the Experience Home',
+    description: 'Baking, craft, pottery and painting kits delivered to your door.',
+    icon: 'Package',
+    link: '/diy-kits',
+    cta: 'Explore DIY Kits',
+  },
+  {
+    id: 'hs6',
+    title: 'Gourmet Platters',
+    subtitle: 'Curated. Fresh. Delicious.',
+    description: 'Snack, cheese, Mediterranean and dessert platters for any occasion.',
+    icon: 'ChefHat',
+    link: '/gourmet-platters',
+    cta: 'Order a Platter',
+  },
+  {
+    id: 'hs7',
+    title: 'Grazing Tables',
+    subtitle: 'A Feast Worth Gathering Around',
+    description: 'Beautifully styled grazing tables for events and celebrations.',
+    icon: 'Flower2',
+    link: '/grazing-tables',
+    cta: 'Book a Grazing Table',
+  },
+  {
+    id: 'hs8',
+    title: 'Catering',
+    subtitle: 'Farm to Fork, Wherever You Celebrate',
+    description: 'Full-service catering for weddings, corporate events and parties.',
+    icon: 'Truck',
+    link: '/catering',
+    cta: 'Enquire for Catering',
+  },
+];

@@ -1,0 +1,98 @@
+/**
+ * diyKits.js – DIY kits for home delivery.
+ * Replace with client data when ready.
+ */
+export const diyCategories = [
+  'All',
+  'Baking',
+  'Craft',
+  'Pottery & Clay',
+  'Painting',
+  'Seasonal',
+  'Kids',
+  'Special Occasion',
+];
+
+export const diyKits = [
+  {
+    id: 'dk1',
+    name: 'Cookie Baking Kit',
+    description: 'Everything you need to bake 24 delicious cookies at home — pre-measured ingredients, moulds & icing.',
+    price: 899,
+    category: 'Baking',
+    image: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop',
+    includes: ['Pre-measured dry mix', 'Cookie cutters', 'Icing set', 'Recipe card', 'Parchment paper'],
+  },
+  {
+    id: 'dk2',
+    name: 'Sourdough Starter Kit',
+    description: 'Start your sourdough journey with our live starter, flour blend and step-by-step guide.',
+    price: 1199,
+    category: 'Baking',
+    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop',
+    includes: ['Live sourdough starter', 'Bread flour', 'Banneton basket', 'Dough scraper', 'Guide booklet'],
+  },
+  {
+    id: 'dk3',
+    name: 'Candle Making Kit',
+    description: 'Create 4 scented soy candles in beautiful jars with our all-inclusive kit.',
+    price: 1099,
+    category: 'Craft',
+    image: 'https://images.unsplash.com/photo-1602607750006-0e72f9c7c52e?w=400&h=300&fit=crop',
+    includes: ['Soy wax', '4 glass jars', 'Wicks', '3 fragrance oils', 'Thermometer', 'Instructions'],
+  },
+  {
+    id: 'dk4',
+    name: 'Macramé Wall Hanging Kit',
+    description: 'Learn basic macramé knots and create a beautiful boho wall hanging.',
+    price: 799,
+    category: 'Craft',
+    image: 'https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=400&h=300&fit=crop',
+    includes: ['Macramé cord', 'Wooden dowel', 'Beads', 'Instruction booklet', 'Video QR code'],
+  },
+  {
+    id: 'dk5',
+    name: 'Air Dry Clay Kit',
+    description: 'Make planters, trinket trays and ornaments with premium air-dry clay.',
+    price: 949,
+    category: 'Pottery & Clay',
+    image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=300&fit=crop',
+    includes: ['2 kg air-dry clay', 'Tools set', 'Acrylic paints', 'Sealant', 'Project ideas card'],
+  },
+  {
+    id: 'dk6',
+    name: 'Watercolour Painting Kit',
+    description: 'Professional-grade watercolour set with paper and guided tutorials.',
+    price: 1299,
+    category: 'Painting',
+    image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=300&fit=crop',
+    includes: ['24-colour palette', 'Brushes set', 'Watercolour paper pad', '3 tutorial cards', 'Mixing palette'],
+  },
+  {
+    id: 'dk7',
+    name: 'Diwali Craft Box',
+    description: 'Festive craft kit — make diyas, rangoli stencils, and toran decorations.',
+    price: 1099,
+    category: 'Seasonal',
+    image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+    includes: ['Clay diyas', 'Paints', 'Rangoli stencils', 'Toran materials', 'Glitter & gems'],
+  },
+  {
+    id: 'dk8',
+    name: 'Kids Art Box',
+    description: 'A fun activity box for kids with multiple craft projects and surprises!',
+    price: 699,
+    category: 'Kids',
+    image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=300&fit=crop',
+    includes: ['5 mini projects', 'Craft supplies', 'Stickers', 'Instruction cards', 'Surprise toy'],
+  },
+  {
+    id: 'dk9',
+    name: 'Date Night Baking Kit',
+    description: 'A romantic evening of baking together — make chocolate fondants for two.',
+    price: 1399,
+    category: 'Special Occasion',
+    image: 'https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop',
+    includes: ['Premium chocolate', 'Pre-measured ingredients', 'Ramekins', 'Candle', 'Playlist QR code'],
+  },
+];
