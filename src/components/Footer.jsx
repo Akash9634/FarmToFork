@@ -1,5 +1,5 @@
 /**
- * Footer – Site footer with links, locations, and social icons.
+ * Footer – Site footer with links, locations, social icons, and Razorpay compliance policy links.
  */
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Clock } from 'lucide-react';
@@ -27,7 +27,8 @@ export default function Footer() {
     <footer className="bg-charcoal text-white">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
+          
+          {/* Brand + Social */}
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="text-2xl">🌿</span>
@@ -38,7 +39,7 @@ export default function Footer() {
               curated gatherings.
             </p>
 
-            {/* Social Media Icons (Inline SVGs) */}
+            {/* Social Icons (Inline SVGs – Lucide brand icons were removed) */}
             <div className="flex items-center gap-3">
               {/* Instagram */}
               <a
@@ -81,7 +82,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.to}>
-                  <Link to={link.to} className="text-white/60 hover:text-white transition-colors text-sm">
+                  <Link
+                    to={link.to}
+                    className="text-white/60 hover:text-white transition-colors text-sm"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -89,13 +93,16 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* More Links */}
+          {/* Services */}
           <div>
             <h4 className="font-heading text-lg font-bold mb-4">Services</h4>
             <ul className="space-y-2">
               {moreLinks.map((link) => (
                 <li key={link.to}>
-                  <Link to={link.to} className="text-white/60 hover:text-white transition-colors text-sm">
+                  <Link
+                    to={link.to}
+                    className="text-white/60 hover:text-white transition-colors text-sm"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -128,10 +135,28 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
+        {/* Bottom bar – Copyright + Razorpay Compliance Links */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
           <p>&copy; {new Date().getFullYear()} Farm to Fork. All rights reserved.</p>
-          <p>Demo Website – No real transactions</p>
+
+          {/* Policy links required by Razorpay for KYC approval */}
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-white/20">•</span>
+            <Link to="/terms-and-conditions" className="hover:text-white transition-colors">
+              Terms & Conditions
+            </Link>
+            <span className="text-white/20">•</span>
+            <Link to="/cancellation-refund" className="hover:text-white transition-colors">
+              Cancellation & Refund
+            </Link>
+            <span className="text-white/20">•</span>
+            <Link to="/shipping-policy" className="hover:text-white transition-colors">
+              Shipping & Delivery
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -9,6 +9,7 @@ import LocationModal from './components/LocationModal';
 import ScrollToTop from './components/ScrollToTop';
 import CartDrawer from './components/CartDrawer';
 
+
 // Pages
 import Home from './pages/Home';
 import Menu from './pages/Menu';
@@ -22,6 +23,7 @@ import GrazingTables from './pages/GrazingTables';
 import Catering from './pages/Catering';
 import Contact from './pages/Contact';
 import BookingFlow from './pages/BookingFlow';
+import Policies from './pages/Policies';
 
 export default function App() {
   return (
@@ -52,6 +54,10 @@ export default function App() {
           <Route path="/grazing-tables" element={<GrazingTables />} />
           <Route path="/catering" element={<Catering />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<Policies />} />
+          <Route path="/terms-and-conditions" element={<Policies />} />
+          <Route path="/cancellation-refund" element={<Policies />} />
+          <Route path="/shipping-policy" element={<Policies />} />
           {/* Unified booking flow for all services */}
           <Route path="/booking/:serviceType" element={<BookingFlow />} />
         </Routes>
