@@ -115,6 +115,23 @@ export default function BookingForm({ config, initialValues = {}, onSubmit }) {
           />
         );
 
+        case 'tel':
+        return (
+          <input
+            type="tel"
+            value={value}
+            maxLength={10}
+            placeholder={field.placeholder || "10-digit mobile number"}
+            onChange={(e) => {
+              // Automatically remove any non-numeric characters (letters/symbols)
+              const onlyNumbers = e.target.value.replace(/\D/g, '');
+              handleChange(field.name, onlyNumbers);
+            }}
+            onBlur={() => handleBlur(field.name)}
+            className={baseClasses}
+          />
+        );
+
       default:
         return (
           <input

@@ -145,7 +145,7 @@ export default function BookingFlow() {
 
   const deposit =
     serviceType === 'reservation'
-      ? { label: 'Advance Deposit', amount: 500, note: 'Adjustable against your final bill' }
+      ? { label: 'Advance Deposit', amount: 500, note: 'Non-refundable advance to confirm table' }
       : serviceType === 'event'
       ? { label: 'Event Advance', amount: 10000, note: 'Non-refundable advance to confirm date' }
       : null;

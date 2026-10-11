@@ -9,8 +9,8 @@ import { locationNames } from './locations';
 const required = (v) => (!v || v.toString().trim() === '' ? 'This field is required' : '');
 const validPhone = (v) => {
   if (!v) return 'Phone number is required';
-  const cleaned = v.replace(/\D/g, '');
-  return cleaned.length >= 10 ? '' : 'Enter a valid 10-digit phone number';
+  const cleaned = v.toString().replace(/\D/g, '');
+  return cleaned.length === 10 ? '' : 'Enter a valid 10-digit phone number';
 };
 const validEmail = (v) => {
   if (!v) return 'Email is required';
@@ -104,8 +104,8 @@ export const grazingConfig = {
   fields: [
     { name: 'location', label: 'Location', type: 'select', options: locationNames, validate: required },
     { name: 'date', label: 'Event Date', type: 'date', validate: required },
-    { name: 'guests', label: 'Number of Guests', type: 'number', min: 20, max: 200, validate: required },
-    { name: 'packageName', label: 'Package', type: 'select', options: ['Classic Grazing Table', 'Premium Grazing Table', 'Luxury Grazing Experience'], validate: required },
+     { name: 'guests', label: 'Number of Guests', type: 'number', min: 15, max: 200, validate: required },
+    { name: 'packageName', label: 'Package', type: 'select', options: ['1. Classic Grazing Table', '2. Premium Grazing Table', '3. Luxury Signature Grazing Table'], validate: required },
     { name: 'stylingRequirements', label: 'Styling Requirements', type: 'textarea', placeholder: 'Theme, colour palette, special dietary needs...', validate: () => '' },
     { name: 'name', label: 'Your Name', type: 'text', validate: required },
     { name: 'phone', label: 'Phone Number', type: 'tel', validate: validPhone },

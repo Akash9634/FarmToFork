@@ -2,6 +2,7 @@
  * Events – Event types, services offered, and enquiry form.
  */
 import { useNavigate } from 'react-router-dom';
+import PastEventsGallery from '../components/PastEventsGallery';
 import HeroSection from '../components/HeroSection';
 import SectionHeading from '../components/SectionHeading';
 import BookingForm from '../components/BookingForm';
@@ -52,6 +53,8 @@ export default function Events() {
           </div>
         </div>
       </section>
+
+      <PastEventsGallery title="Our Past Events" subtitle="Event Gallery" />
 
       {/* Services */}
       <section className="py-16 bg-cream-dark">

@@ -1,7 +1,7 @@
 /**
  * Home – Landing page with hero, CTAs, services, locations, and how-it-works strip.
  */
-import HeroSection from '../components/HeroSection';
+import HomeHero from '../components/HomeHero';
 import CTAButton from '../components/CTAButton';
 import SectionHeading from '../components/SectionHeading';
 import ServiceCard from '../components/ServiceCard';
@@ -20,12 +20,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <HeroSection
-        title="Where Every Meal Tells a Story"
-        subtitle="Café · Experiences · Events · Catering"
-        description="Farm to Fork is a destination for great food, creative experiences, celebrations, and beautifully curated gatherings."
-        imageUrl="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600&h=900&fit=crop"
-      >
+       <HomeHero>
         <CTAButton to="/reservations" variant="primary" size="lg">
           Reserve a Table
         </CTAButton>
@@ -38,8 +33,7 @@ export default function Home() {
         <CTAButton to="/grazing-tables" variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-charcoal">
           Book a Grazing Table
         </CTAButton>
-      </HeroSection>
-
+      </HomeHero>
       {/* How It Works */}
       <section className="bg-sage py-16">
         <div className="max-w-7xl mx-auto px-4">

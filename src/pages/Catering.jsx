@@ -3,6 +3,7 @@
  */
 import { useState } from 'react';
 import HeroSection from '../components/HeroSection';
+import PastEventsGallery from '../components/PastEventsGallery';
 import SectionHeading from '../components/SectionHeading';
 import BookingForm from '../components/BookingForm';
 import { cateringConfig } from '../data/formConfigs';
@@ -49,6 +50,8 @@ export default function Catering() {
           </div>
         </div>
       </section>
+
+      <PastEventsGallery title="Our Catering Setups" subtitle="Catering Gallery" />
 
       {/* Form */}
       <section className="py-16 bg-cream-dark">

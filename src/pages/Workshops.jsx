@@ -4,6 +4,7 @@
 import { useNavigate } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import SectionHeading from '../components/SectionHeading';
+import PastEventsGallery from '../components/PastEventsGallery';
 import CTAButton from '../components/CTAButton';
 import BookingForm from '../components/BookingForm';
 import Modal from '../components/Modal';
@@ -123,6 +124,8 @@ export default function Workshops() {
           </div>
         </div>
       </section>
+
+      <PastEventsGallery title="Past Workshop Moments" subtitle="Workshop Gallery" />
 
       {/* Booking Modal */}
       <Modal

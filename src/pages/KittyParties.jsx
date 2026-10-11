@@ -6,6 +6,7 @@ import HeroSection from '../components/HeroSection';
 import SectionHeading from '../components/SectionHeading';
 import BookingForm from '../components/BookingForm';
 import CTAButton from '../components/CTAButton';
+import PastEventsGallery from '../components/PastEventsGallery';
 import { kittyMenus, kittyPackages, kittyAddOns, kittyTableSetups, kittyDecorOptions } from '../data/kittyPackages';
 import { kittyConfig } from '../data/formConfigs';
 import { useApp } from '../context/AppContext';
@@ -101,6 +102,8 @@ export default function KittyParties() {
           </div>
         </div>
       </section>
+
+      <PastEventsGallery title="Past Kitty Parties" subtitle="Party Gallery" />
 
       {/* Table Setups & Décor */}
       <section className="py-16">
