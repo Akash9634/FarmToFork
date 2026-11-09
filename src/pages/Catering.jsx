@@ -32,7 +32,7 @@ export default function Catering() {
         title="Catering Services"
         subtitle="Farm to Fork, Wherever You Celebrate"
         description="Customised catering options with food, beverages, and hospitality for events of all sizes."
-        imageUrl="https://images.unsplash.com/photo-1555244162-803834f70033?w=1600&h=600&fit=crop"
+        imageUrl="/images/Catering-hero.png"
         height="min-h-[50vh]"
       />
 

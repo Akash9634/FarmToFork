@@ -9,7 +9,7 @@ export const grazingPackages = [
     tagline: 'A beautiful spread for every occasion',
     pricePerPerson: 1299,
     minGuests: 15,
-    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop', // Placeholder
+    image: '/images/Grazing-table-hero.png', // Placeholder
     menu: [
       { category: 'Beverages', items: ['Iced Tea', 'Fruit-Infused Detox Water'] },
       { category: 'Savoury Selection', items: ['Mini Vegetable Sliders', 'Avocado Toast Bites', 'Chickpea & Sweet Corn Chaat', 'Classic Vegetable Sandwich Bites'] },
@@ -23,7 +23,7 @@ export const grazingPackages = [
     tagline: 'Elevated grazing for special events',
     pricePerPerson: 1799,
     minGuests: 15,
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop', // Placeholder
+    image: '/images/grazing-package-prem.png', // Placeholder
     menu: [
       { category: 'Beverages', items: ['Iced Tea', 'Fresh Lime Soda', 'Fruit-Infused Detox Water'] },
       { category: 'Gourmet Savouries', items: ['Gourmet Vegetable Sliders', 'Avocado Toast Bites', 'Crispy Cigar Rolls', 'Mini Burrito Cups', 'Paneer Tikka Bites'] },
@@ -37,7 +37,7 @@ export const grazingPackages = [
     tagline: 'The ultimate feast for the senses',
     pricePerPerson: 2399,
     minGuests: 15,
-    image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&h=400&fit=crop', // Placeholder
+    image: '/images/grazing-package-luxury.png', // Placeholder
     menu: [
       { category: 'Signature Beverages', items: ['Freshly Squeezed Orange Juice', 'Summer Tonic', 'Iced Tea', 'Fruit-Infused Detox Water'] },
       { category: 'Artisan & Gourmet Bites', items: ['Assorted Vegetable Sushi Rolls', 'Avocado Toast Bites with Gourmet Toppings', 'Truffle-Infused Mushroom Crostini', 'Gourmet Mini Sliders', 'Paneer Tikka Skewers'] },

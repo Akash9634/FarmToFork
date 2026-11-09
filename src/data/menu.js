@@ -90,7 +90,7 @@ export const menuItems = [
     description: 'Poached eggs on English muffin with hollandaise',
     price: 399,
     category: 'Breakfast',
-    image: 'https://images.unsplash.com/photo-1608039829572-9b0e9f4b5714?w=400&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&auto=format&fit=crop&q=80',
     isVeg: false,
   },
   {
@@ -224,7 +224,7 @@ export const menuItems = [
     description: 'Matcha, banana & spinach blend topped with kiwi, chia & nuts',
     price: 329,
     category: 'Smoothie Bowls',
-    image: 'https://images.unsplash.com/photo-1511690743698-d9d18f7e20f1?w=400&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=600&q=80',
     isVeg: true,
   },
 ];

@@ -30,7 +30,7 @@ export default function GrazingTables() {
         title="Grazing Tables"
         subtitle="A Feast Worth Gathering Around"
         description="Beautifully styled grazing tables for weddings, corporate events, brand events, birthdays, and social gatherings."
-        imageUrl="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&h=600&fit=crop"
+        imageUrl="/images/Grazing-table-hero.png"
         height="min-h-[50vh]"
       />
 

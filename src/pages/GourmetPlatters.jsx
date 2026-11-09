@@ -40,7 +40,7 @@ export default function GourmetPlatters() {
         title="Gourmet Platters"
         subtitle="Curated. Fresh. Delicious."
         description="Perfect for house parties, corporate meetings, birthdays, gifting, celebrations and small events."
-        imageUrl="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1600&h=600&fit=crop"
+        imageUrl="/images/Gourmet-hero.png"
         height="min-h-[50vh]"
       />
 

@@ -2,10 +2,10 @@ import SectionHeading from './SectionHeading';
 
 // Placeholders – client will provide real photos later
 const placeholders = [
-  'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=500&h=500&fit=crop',
-  'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=500&h=500&fit=crop',
-  'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=500&h=500&fit=crop',
-  'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&h=500&fit=crop',
+  "/images/catering-1.png",
+    "/images/catering-2.png",
+    "/images/catering-3.png",
+    "/images/catering-4.png"
 ];
 
 export default function PastEventsGallery({ title = "Our Past Events", subtitle = "Memories" }) {
