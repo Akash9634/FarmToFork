@@ -1,24 +1,24 @@
 /**
  * Navbar – Main navigation with location selector, menu links, CTA buttons & mobile drawer.
  */
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ShoppingBag } from 'lucide-react';
-import LocationSelector from './LocationSelector';
-import { useApp } from '../context/AppContext';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, ShoppingBag } from "lucide-react";
+import LocationSelector from "./LocationSelector";
+import { useApp } from "../context/AppContext";
 
 const navLinks = [
-  { label: 'Home', to: '/' },
-  { label: 'Menu', to: '/menu' },
-  { label: 'Reservations', to: '/reservations' },
-  { label: 'Workshops', to: '/workshops' },
-  { label: 'Kitty Parties', to: '/kitty-parties' },
-  { label: 'Events', to: '/events' },
-  { label: 'DIY Kits', to: '/diy-kits' },
-  { label: 'Gourmet Platters', to: '/gourmet-platters' },
-  { label: 'Grazing Tables', to: '/grazing-tables' },
-  { label: 'Catering', to: '/catering' },
-  { label: 'Contact', to: '/contact' },
+  { label: "Home", to: "/" },
+  { label: "Menu", to: "/menu" },
+  { label: "Reservations", to: "/reservations" },
+  { label: "Workshops", to: "/workshops" },
+  { label: "Kitty Parties", to: "/kitty-parties" },
+  { label: "Events", to: "/events" },
+  { label: "DIY Kits", to: "/diy-kits" },
+  { label: "Gourmet Platters", to: "/gourmet-platters" },
+  { label: "Grazing Tables", to: "/grazing-tables" },
+  { label: "Catering", to: "/catering" },
+  { label: "Contact", to: "/contact" },
 ];
 
 export default function Navbar() {
@@ -31,15 +31,37 @@ export default function Navbar() {
       {/* Top bar with CTAs */}
       <div className="hidden lg:block bg-sage text-white">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between py-2 text-sm">
-          <span className="font-medium">Farm to Fork — Café · Experiences · Events · Catering</span>
+          <span className="font-medium">
+            Farm to Fork — Café · Experiences · Events · Catering
+          </span>
           <div className="flex items-center gap-4">
-            <Link to="/reservations" className="hover:text-cream-dark transition-colors">Reserve a Table</Link>
+            <Link
+              to="/reservations"
+              className="hover:text-cream-dark transition-colors"
+            >
+              Reserve a Table
+            </Link>
             <span className="text-white/40">•</span>
-            <Link to="/workshops" className="hover:text-cream-dark transition-colors">Book a Workshop</Link>
+            <Link
+              to="/workshops"
+              className="hover:text-cream-dark transition-colors"
+            >
+              Book a Workshop
+            </Link>
             <span className="text-white/40">•</span>
-            <Link to="/events" className="hover:text-cream-dark transition-colors">Plan an Event</Link>
+            <Link
+              to="/events"
+              className="hover:text-cream-dark transition-colors"
+            >
+              Plan an Event
+            </Link>
             <span className="text-white/40">•</span>
-            <Link to="/grazing-tables" className="hover:text-cream-dark transition-colors">Book a Grazing Table</Link>
+            <Link
+              to="/grazing-tables"
+              className="hover:text-cream-dark transition-colors"
+            >
+              Book a Grazing Table
+            </Link>
           </div>
         </div>
       </div>
@@ -48,11 +70,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <span className="text-2xl">🌿</span>
-            <div>
-              <span className="font-heading text-xl font-bold text-charcoal">Farm to Fork</span>
-            </div>
+          <Link to="/" className="lex items-center gap-2 -ml-4 mr-4">
+            <img
+              src="/images/logo.png"
+              alt="Farm to Fork Logo"
+              className="h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop nav links */}
@@ -63,8 +86,8 @@ export default function Navbar() {
                 to={link.to}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   location.pathname === link.to
-                    ? 'text-sage bg-sage/10'
-                    : 'text-charcoal-light hover:text-sage hover:bg-sage/5'
+                    ? "text-sage bg-sage/10"
+                    : "text-charcoal-light hover:text-sage hover:bg-sage/5"
                 }`}
               >
                 {link.label}
@@ -103,7 +126,10 @@ export default function Navbar() {
       {/* Mobile drawer */}
       {mobileOpen && (
         <div className="xl:hidden fixed inset-0 top-16 z-30">
-          <div className="absolute inset-0 bg-black/30" onClick={() => setMobileOpen(false)} />
+          <div
+            className="absolute inset-0 bg-black/30"
+            onClick={() => setMobileOpen(false)}
+          />
           <nav className="relative bg-white h-full max-w-xs w-full shadow-xl overflow-y-auto">
             <div className="p-4 space-y-1">
               {/* CTA buttons at top */}
@@ -131,8 +157,8 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                   className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                     location.pathname === link.to
-                      ? 'text-sage bg-sage/10'
-                      : 'text-charcoal hover:text-sage hover:bg-sage/5'
+                      ? "text-sage bg-sage/10"
+                      : "text-charcoal hover:text-sage hover:bg-sage/5"
                   }`}
                 >
                   {link.label}

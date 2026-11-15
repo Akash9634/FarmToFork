@@ -1,25 +1,25 @@
 /**
  * Footer – Site footer with links, locations, social icons, and Razorpay compliance policy links.
  */
-import { Link } from 'react-router-dom';
-import { MapPin, Phone, Clock } from 'lucide-react';
-import { locations } from '../data/locations';
+import { Link } from "react-router-dom";
+import { MapPin, Phone, Clock } from "lucide-react";
+import { locations } from "../data/locations";
 
 const quickLinks = [
-  { label: 'Home', to: '/' },
-  { label: 'Menu', to: '/menu' },
-  { label: 'Reservations', to: '/reservations' },
-  { label: 'Workshops', to: '/workshops' },
-  { label: 'Kitty Parties', to: '/kitty-parties' },
-  { label: 'Events', to: '/events' },
+  { label: "Home", to: "/" },
+  { label: "Menu", to: "/menu" },
+  { label: "Reservations", to: "/reservations" },
+  { label: "Workshops", to: "/workshops" },
+  { label: "Kitty Parties", to: "/kitty-parties" },
+  { label: "Events", to: "/events" },
 ];
 
 const moreLinks = [
-  { label: 'DIY Kits', to: '/diy-kits' },
-  { label: 'Gourmet Platters', to: '/gourmet-platters' },
-  { label: 'Grazing Tables', to: '/grazing-tables' },
-  { label: 'Catering', to: '/catering' },
-  { label: 'Contact', to: '/contact' },
+  { label: "DIY Kits", to: "/diy-kits" },
+  { label: "Gourmet Platters", to: "/gourmet-platters" },
+  { label: "Grazing Tables", to: "/grazing-tables" },
+  { label: "Catering", to: "/catering" },
+  { label: "Contact", to: "/contact" },
 ];
 
 export default function Footer() {
@@ -27,16 +27,18 @@ export default function Footer() {
     <footer className="bg-charcoal text-white">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          
           {/* Brand + Social */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">🌿</span>
-              <span className="font-heading text-xl font-bold">Farm to Fork</span>
+              <img
+                src="/images/logo.png"
+                alt="Farm to Fork Logo"
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              A destination for great food, creative experiences, celebrations, and beautifully
-              curated gatherings.
+              A destination for great food, creative experiences, celebrations,
+              and beautifully curated gatherings.
             </p>
 
             {/* Social Icons (Inline SVGs – Lucide brand icons were removed) */}
@@ -112,7 +114,9 @@ export default function Footer() {
 
           {/* Locations */}
           <div>
-            <h4 className="font-heading text-lg font-bold mb-4">Our Locations</h4>
+            <h4 className="font-heading text-lg font-bold mb-4">
+              Our Locations
+            </h4>
             <div className="space-y-4">
               {locations.map((loc) => (
                 <div key={loc.id} className="text-sm">
@@ -137,23 +141,37 @@ export default function Footer() {
 
         {/* Bottom bar – Copyright + Razorpay Compliance Links */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
-          <p>&copy; {new Date().getFullYear()} Farm to Fork. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Farm to Fork. All rights reserved.
+          </p>
 
           {/* Policy links required by Razorpay for KYC approval */}
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs">
-            <Link to="/privacy-policy" className="hover:text-white transition-colors">
+            <Link
+              to="/privacy-policy"
+              className="hover:text-white transition-colors"
+            >
               Privacy Policy
             </Link>
             <span className="text-white/20">•</span>
-            <Link to="/terms-and-conditions" className="hover:text-white transition-colors">
+            <Link
+              to="/terms-and-conditions"
+              className="hover:text-white transition-colors"
+            >
               Terms & Conditions
             </Link>
             <span className="text-white/20">•</span>
-            <Link to="/cancellation-refund" className="hover:text-white transition-colors">
+            <Link
+              to="/cancellation-refund"
+              className="hover:text-white transition-colors"
+            >
               Cancellation & Refund
             </Link>
             <span className="text-white/20">•</span>
-            <Link to="/shipping-policy" className="hover:text-white transition-colors">
+            <Link
+              to="/shipping-policy"
+              className="hover:text-white transition-colors"
+            >
               Shipping & Delivery
             </Link>
           </div>
