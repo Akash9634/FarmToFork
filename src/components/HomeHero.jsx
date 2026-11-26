@@ -54,7 +54,7 @@ export default function HomeHero({ children }) {
           Where Every Meal Tells a Story
         </h1>
         <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Farm to Fork is a destination for great food, creative experiences, celebrations, and beautifully curated gatherings.
+          Gather around good food, share unforgettable moments, and make every occasion feel a little more special.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           {children}
